@@ -8,14 +8,13 @@
 import UIKit
 import Combine
 
-class VideoPlayViewController: UIViewController, VideoTimelineViewDelegate {
+class VideoPlayViewController: UIViewController, ZCVideoTimelineViewDelegate {
     
-    private var videoPlayer = DefaultVideoPlayer()
+    private var videoPlayer = ZCVideoPlayer()
+    private let videoView = ZCVideoPlayerView()
     
-    private let videoView = DefaultVideoView()
-    
-    private lazy var videoTimelineView: VideoTimelineView = {
-        let timelineView = VideoTimelineView()
+    private lazy var videoTimelineView: ZCVideoTimelineView = {
+        let timelineView = ZCVideoTimelineView()
         timelineView.delegate = self
         return timelineView
     }()
@@ -49,12 +48,13 @@ class VideoPlayViewController: UIViewController, VideoTimelineViewDelegate {
         view.backgroundColor = .white
         
         view.addSubview(videoView)
-        videoView.backgroundColor = .black
+        videoView.backgroundColor = UIColor(hex: "#EEF3F6FF")
         videoView.constraints(leading: view.safeAreaLayoutGuide.leadingAnchor,
                               top: view.safeAreaLayoutGuide.topAnchor,
                               trailing: view.safeAreaLayoutGuide.trailingAnchor)
         
         view.addSubview(videoTimelineView)
+        videoTimelineView.backgroundColor = UIColor(hex: "#F4F4F4FF")
         videoTimelineView.constraints(leading: view.safeAreaLayoutGuide.leadingAnchor,
                                       top: videoView.bottomAnchor,
                                       trailing: view.safeAreaLayoutGuide.trailingAnchor,
@@ -86,7 +86,7 @@ class VideoPlayViewController: UIViewController, VideoTimelineViewDelegate {
             }.store(in: &cancellables)
     }
     
-    private func updatePlayButton(_ status: VideoPlayerStatus) {
+    private func updatePlayButton(_ status: ZCVideoPlayerStatus) {
         isPlaying = status == .playing
         let image = isPlaying ? UIImage(systemName: "pause.fill") : UIImage(systemName: "play.fill")
         self.playButton.setImage(image, for: .normal)

@@ -2,11 +2,10 @@
 //  ThumbnailGenerator.swift
 //  VideoTimeline
 //
-//  Created by hope on 12/24/22.
 //
 import AVFoundation
 
-class ThumbnailGenerator {
+class ZCThumbnailGenerator {
     
     private let assetImageGenerator: AVAssetImageGenerator
     private let videoDuration: Double
@@ -26,21 +25,22 @@ class ThumbnailGenerator {
         assetImageGenerator.cancelAllCGImageGeneration()
     }
     
-    func requestThumbnails(intervalSeconds: Int, completion: @escaping (CGImage?, Int, Int) -> Void) {
-        let interval = intervalSeconds < 1 ? 1 : intervalSeconds
-        let duration = Int(videoDuration)
-        var thumbCount = duration / interval
+    func requestThumbnails(intervalSeconds: Double, maxSize: CGSize, completion: @escaping (CGImage?, Int, Int) -> Void) {
+        let interval = intervalSeconds
+        let duration = videoDuration
+        var thumbCount = Int(duration / interval)
         var thumbTimes = [NSValue]()
         
-        if thumbCount * interval < duration {
+        if Double(thumbCount) * interval < duration {
             thumbCount += 1
         }
         for i in 0..<thumbCount {
-            let time = CMTime(value: CMTimeValue(i * interval), timescale: 1)
+            let time = CMTime(value: CMTimeValue(Double(i) * interval), timescale: 1)
             thumbTimes.append(NSValue(time: time))
         }
         
         thumbIndex = 0
+        assetImageGenerator.maximumSize = maxSize
         assetImageGenerator.generateCGImagesAsynchronously(forTimes: thumbTimes) { [weak self] requestedTime, cgImage, actualTime, result, error in
             guard let self = self else {
                 return

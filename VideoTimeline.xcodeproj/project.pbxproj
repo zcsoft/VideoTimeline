@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423AC2972D5B456F00D90243 /* IMG_3755.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 423AC2962D5B456F00D90243 /* IMG_3755.MOV */; };
+		423AC2992D5B762500D90243 /* hai.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 423AC2982D5B762500D90243 /* hai.mp4 */; };
 		F80C221F294B97AF007FDC95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C221E294B97AF007FDC95 /* AppDelegate.swift */; };
 		F80C2223294B97AF007FDC95 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2222294B97AF007FDC95 /* VideoPlayViewController.swift */; };
 		F80C2226294B97AF007FDC95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80C2224294B97AF007FDC95 /* Main.storyboard */; };
 		F80C2228294B97B2007FDC95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80C2227294B97B2007FDC95 /* Assets.xcassets */; };
 		F80C222B294B97B2007FDC95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80C2229294B97B2007FDC95 /* LaunchScreen.storyboard */; };
-		F80C2234294B989B007FDC95 /* DefaultVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2233294B989B007FDC95 /* DefaultVideoPlayer.swift */; };
-		F80C2237294BCE48007FDC95 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2236294BCE48007FDC95 /* UIView+Extension.swift */; };
-		F80C2239294BD061007FDC95 /* DefaultVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2238294BD061007FDC95 /* DefaultVideoView.swift */; };
-		F80C223F294C254F007FDC95 /* VideoTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C223E294C254F007FDC95 /* VideoTimelineView.swift */; };
-		F8A044872957A64200C0679B /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A044862957A64200C0679B /* ThumbnailGenerator.swift */; };
-		F8A04489295918B800C0679B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A04488295918B800C0679B /* Int+Extension.swift */; };
-		F8A0448B295A493400C0679B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A0448A295A493400C0679B /* UIColor+Extension.swift */; };
+		F80C2234294B989B007FDC95 /* ZCVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2233294B989B007FDC95 /* ZCVideoPlayer.swift */; };
+		F80C2237294BCE48007FDC95 /* ZCVPUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2236294BCE48007FDC95 /* ZCVPUIView+Extension.swift */; };
+		F80C2239294BD061007FDC95 /* ZCVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C2238294BD061007FDC95 /* ZCVideoPlayerView.swift */; };
+		F80C223F294C254F007FDC95 /* ZCVideoTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C223E294C254F007FDC95 /* ZCVideoTimelineView.swift */; };
+		F8A044872957A64200C0679B /* ZCThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A044862957A64200C0679B /* ZCThumbnailGenerator.swift */; };
+		F8A04489295918B800C0679B /* ZCVPInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A04488295918B800C0679B /* ZCVPInt+Extension.swift */; };
+		F8A0448B295A493400C0679B /* ZCVPUIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A0448A295A493400C0679B /* ZCVPUIColor+Extension.swift */; };
 		F8A0448D295A4B1C00C0679B /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F8A0448C295A4B1C00C0679B /* sample.mp4 */; };
 		F8A0449D295A8BFE00C0679B /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A0449C295A8BFE00C0679B /* ExtensionTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		423AC2962D5B456F00D90243 /* IMG_3755.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_3755.MOV; sourceTree = "<group>"; };
+		423AC2982D5B762500D90243 /* hai.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hai.mp4; sourceTree = "<group>"; };
 		F80C221B294B97AF007FDC95 /* VideoTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80C221E294B97AF007FDC95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80C2222294B97AF007FDC95 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
@@ -41,13 +45,13 @@
 		F80C2227294B97B2007FDC95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80C222A294B97B2007FDC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80C222C294B97B2007FDC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F80C2233294B989B007FDC95 /* DefaultVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVideoPlayer.swift; sourceTree = "<group>"; };
-		F80C2236294BCE48007FDC95 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		F80C2238294BD061007FDC95 /* DefaultVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVideoView.swift; sourceTree = "<group>"; };
-		F80C223E294C254F007FDC95 /* VideoTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTimelineView.swift; sourceTree = "<group>"; };
-		F8A044862957A64200C0679B /* ThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailGenerator.swift; sourceTree = "<group>"; };
-		F8A04488295918B800C0679B /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
-		F8A0448A295A493400C0679B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F80C2233294B989B007FDC95 /* ZCVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCVideoPlayer.swift; sourceTree = "<group>"; };
+		F80C2236294BCE48007FDC95 /* ZCVPUIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZCVPUIView+Extension.swift"; sourceTree = "<group>"; };
+		F80C2238294BD061007FDC95 /* ZCVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCVideoPlayerView.swift; sourceTree = "<group>"; };
+		F80C223E294C254F007FDC95 /* ZCVideoTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCVideoTimelineView.swift; sourceTree = "<group>"; };
+		F8A044862957A64200C0679B /* ZCThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCThumbnailGenerator.swift; sourceTree = "<group>"; };
+		F8A04488295918B800C0679B /* ZCVPInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZCVPInt+Extension.swift"; sourceTree = "<group>"; };
+		F8A0448A295A493400C0679B /* ZCVPUIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZCVPUIColor+Extension.swift"; sourceTree = "<group>"; };
 		F8A0448C295A4B1C00C0679B /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		F8A04492295A8AED00C0679B /* VideoTimelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTimelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A0449C295A8BFE00C0679B /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				F8A0448C295A4B1C00C0679B /* sample.mp4 */,
+				423AC2962D5B456F00D90243 /* IMG_3755.MOV */,
+				423AC2982D5B762500D90243 /* hai.mp4 */,
 				F80C221D294B97AF007FDC95 /* VideoTimeline */,
 				F8A04493295A8AED00C0679B /* VideoTimelineTests */,
 				F80C221C294B97AF007FDC95 /* Products */,
@@ -93,8 +99,7 @@
 		F80C221D294B97AF007FDC95 /* VideoTimeline */ = {
 			isa = PBXGroup;
 			children = (
-				F80C2235294BCE37007FDC95 /* Extensions */,
-				F80C2232294B9889007FDC95 /* Video */,
+				F80C2232294B9889007FDC95 /* ZCVideoPlayer */,
 				F80C221E294B97AF007FDC95 /* AppDelegate.swift */,
 				F80C2222294B97AF007FDC95 /* VideoPlayViewController.swift */,
 				F80C2224294B97AF007FDC95 /* Main.storyboard */,
@@ -105,23 +110,24 @@
 			path = VideoTimeline;
 			sourceTree = "<group>";
 		};
-		F80C2232294B9889007FDC95 /* Video */ = {
+		F80C2232294B9889007FDC95 /* ZCVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				F80C223E294C254F007FDC95 /* VideoTimelineView.swift */,
-				F80C2233294B989B007FDC95 /* DefaultVideoPlayer.swift */,
-				F80C2238294BD061007FDC95 /* DefaultVideoView.swift */,
-				F8A044862957A64200C0679B /* ThumbnailGenerator.swift */,
+				F80C2235294BCE37007FDC95 /* Extensions */,
+				F80C223E294C254F007FDC95 /* ZCVideoTimelineView.swift */,
+				F80C2233294B989B007FDC95 /* ZCVideoPlayer.swift */,
+				F80C2238294BD061007FDC95 /* ZCVideoPlayerView.swift */,
+				F8A044862957A64200C0679B /* ZCThumbnailGenerator.swift */,
 			);
-			path = Video;
+			path = ZCVideoPlayer;
 			sourceTree = "<group>";
 		};
 		F80C2235294BCE37007FDC95 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F80C2236294BCE48007FDC95 /* UIView+Extension.swift */,
-				F8A04488295918B800C0679B /* Int+Extension.swift */,
-				F8A0448A295A493400C0679B /* UIColor+Extension.swift */,
+				F80C2236294BCE48007FDC95 /* ZCVPUIView+Extension.swift */,
+				F8A04488295918B800C0679B /* ZCVPInt+Extension.swift */,
+				F8A0448A295A493400C0679B /* ZCVPUIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423AC2992D5B762500D90243 /* hai.mp4 in Resources */,
 				F80C222B294B97B2007FDC95 /* LaunchScreen.storyboard in Resources */,
 				F80C2228294B97B2007FDC95 /* Assets.xcassets in Resources */,
+				423AC2972D5B456F00D90243 /* IMG_3755.MOV in Resources */,
 				F8A0448D295A4B1C00C0679B /* sample.mp4 in Resources */,
 				F80C2226294B97AF007FDC95 /* Main.storyboard in Resources */,
 			);
@@ -245,14 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80C2223294B97AF007FDC95 /* VideoPlayViewController.swift in Sources */,
-				F80C223F294C254F007FDC95 /* VideoTimelineView.swift in Sources */,
-				F8A044872957A64200C0679B /* ThumbnailGenerator.swift in Sources */,
-				F8A0448B295A493400C0679B /* UIColor+Extension.swift in Sources */,
-				F80C2239294BD061007FDC95 /* DefaultVideoView.swift in Sources */,
-				F8A04489295918B800C0679B /* Int+Extension.swift in Sources */,
+				F80C223F294C254F007FDC95 /* ZCVideoTimelineView.swift in Sources */,
+				F8A044872957A64200C0679B /* ZCThumbnailGenerator.swift in Sources */,
+				F8A0448B295A493400C0679B /* ZCVPUIColor+Extension.swift in Sources */,
+				F80C2239294BD061007FDC95 /* ZCVideoPlayerView.swift in Sources */,
+				F8A04489295918B800C0679B /* ZCVPInt+Extension.swift in Sources */,
 				F80C221F294B97AF007FDC95 /* AppDelegate.swift in Sources */,
-				F80C2237294BCE48007FDC95 /* UIView+Extension.swift in Sources */,
-				F80C2234294B989B007FDC95 /* DefaultVideoPlayer.swift in Sources */,
+				F80C2237294BCE48007FDC95 /* ZCVPUIView+Extension.swift in Sources */,
+				F80C2234294B989B007FDC95 /* ZCVideoPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8WC4CQZW8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoTimeline/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,6 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8WC4CQZW8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoTimeline/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

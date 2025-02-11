@@ -8,9 +8,8 @@
 import UIKit
 import AVFoundation
 
-class DefaultVideoView: UIView {
-    
-    var player: DefaultVideoPlayer? {
+class ZCVideoPlayerView: UIView {
+    var player: ZCVideoPlayer? {
         didSet {
             let layer = AVPlayerLayer(player: player?.player)
             layer.frame = self.bounds
